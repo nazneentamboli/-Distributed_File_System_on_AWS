@@ -7,14 +7,14 @@ from flask_restful import Resource, Api
 
 app = Flask(__name__)
 api = Api(app)
-name_node_address = "34.212.21.208:5000"
+name_node_address = "IP:5000"
 CHUNK_SIZE = 2<<27
 
 def createFile():
     #we could user environ variables or input for access key and secret key
     s3 = boto3.client('s3',
-                      aws_access_key_id='AKIA2FCNCD7QPLALQFW5',
-                      aws_secret_access_key='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')
+                      aws_access_key_id='ID',
+                      aws_secret_access_key='ACCESS_KEY')
     BucketName = input("enter bucketname: ")
     readFrom = input("enter filepath to read from: ")
     nameOfNewFile = input("enter name of new file: ")
