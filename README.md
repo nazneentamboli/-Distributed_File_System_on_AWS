@@ -1,6 +1,8 @@
 # Cloud9-SUFS
 Seattle University File System based on HDFS
 
+This project was originally collaborated and developed on AWS CodeCommit
+
 test namenode createfile from terminal, ex command:
 
 curl http://localhost:5000/createFile/test2 -d "fileSize=1048577" -X PUT
